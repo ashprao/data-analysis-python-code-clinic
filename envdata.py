@@ -106,9 +106,12 @@ if len(sys.argv) > 1:
             airLowHigh, barLowHigh, windLowHigh = getLowHigh(airTemDict), getLowHigh(barPressureDict), getLowHigh(windSpeedDict)
             airFreq, barFreq, windFreq = getMostFrequent(airTemDict), getMostFrequent(barPressureDict), getMostFrequent(windSpeedDict)
 
-            print('Air temperature: Average {0:.2f}, Median {1:.2f}, Low {2:.2f}, High {3:.2f}, Most frequent {4}, Frequency {5}'.format(average(airTemDict), median(airTemDict), airLowHigh[0], airLowHigh[1], airFreq[0], airFreq[1]))
-            print('Barometric pressure: Average {0:.2f}, Median {1:.2f}, Low {2:.2f}, High {3:.2f}, Most frequent {4}, Frequency {5}'.format(average(barPressureDict), median(barPressureDict), barLowHigh[0], barLowHigh[1], barFreq[0], barFreq[1]))
-            print('Wind speed: Average {0:.2f}, Median {1:.2f}, Low {2:.2f}, High {3:.2f}, Most frequent {4}, Frequency {5}'.format(average(windSpeedDict), median(windSpeedDict), windLowHigh[0], windLowHigh[1], windFreq[0], windFreq[1]))
+            print('Air temperature: Average {0:.2f}, Median {1:.2f}, Low {2:.2f}, High {3:.2f}, Most frequent {4}, Frequency {5}'
+                .format(average(airTemDict), median(airTemDict), airLowHigh[0], airLowHigh[1], airFreq[0], airFreq[1]))
+            print('Barometric pressure: Average {0:.2f}, Median {1:.2f}, Low {2:.2f}, High {3:.2f}, Most frequent {4}, Frequency {5}'
+                .format(average(barPressureDict), median(barPressureDict), barLowHigh[0], barLowHigh[1], barFreq[0], barFreq[1]))
+            print('Wind speed: Average {0:.2f}, Median {1:.2f}, Low {2:.2f}, High {3:.2f}, Most frequent {4}, Frequency {5}'
+                .format(average(windSpeedDict), median(windSpeedDict), windLowHigh[0], windLowHigh[1], windFreq[0], windFreq[1]))
     except FileNotFoundError:
         print(sys.argv[1], " does not exist")
 else:
