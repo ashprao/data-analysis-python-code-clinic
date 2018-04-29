@@ -1,3 +1,0 @@
-date       time    	Air_Temp	Barometric_Press	Dew_Point	Relative_Humidity	Wind_Dir	Wind_Gust	Wind_Speed
-2012_01_01 00:02:14	34.30	30.50	26.90	74.20	346.40	11.00	 3.60
-2012_01_01 00:08:29	34.40	30.50	26.50	73.60	349.00	12.00	 8.00

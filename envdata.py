@@ -45,7 +45,7 @@ def median(valueDict):
     else:
         return sortedList[mid]
 
-# getHigh returns the highest reading from a dictionary
+# getLowHigh returns the lowest and highest reading from a dictionary
 def getLowHigh(valueDict):
     sortedList = sorted(valueDict.keys())
     return sortedList[0], sortedList.pop()
