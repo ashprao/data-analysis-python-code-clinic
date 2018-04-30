@@ -13,7 +13,7 @@ import time
 start = time.time()
 
 
-class WeatherReadingsDict:
+class WeatherReadingDict:
     """A class that holds weather readings and their respective number of occurences"""
 
     # Dictionaries to store weather readings and their associated occurence counts
@@ -86,7 +86,7 @@ class WeatherReadingsDict:
 
 # Dictionaries to store air temperature, barometric pressure and wind speed
 # readings and their associated occurence counts
-airTempDict, barPressureDict, windSpeedDict = WeatherReadingsDict(), WeatherReadingsDict(), WeatherReadingsDict()
+airTempDict, barPressureDict, windSpeedDict = WeatherReadingDict(), WeatherReadingDict(), WeatherReadingDict()
 
 if len(sys.argv) > 1:
     # Command line contains file name parameter
